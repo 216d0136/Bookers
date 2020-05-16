@@ -1,0 +1,19 @@
+<table>
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Body</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			 <tr>
+			 	<td><%= @book.title %></td>
+			 	<td><%= @book.body %></td>
+			 </tr>
+		</tbody>
+</table>
+<br>
+
+<%= link_to "Back", books_path %>
+<%= link_to "Edit", edit_book_path(@book) %>
